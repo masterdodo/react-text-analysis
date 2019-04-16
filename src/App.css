@@ -19,15 +19,19 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#output-text
+{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-analysis
+{
+  flex: 1 0 21%;
+  margin: 5px;
+  font-size: 18px;
+  color: white;
+  border: 5px solid white;
+  padding: 10px;
 }
