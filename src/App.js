@@ -23,20 +23,12 @@ class App extends Component {
 
   preracunaj(text)
   {
-    //alert(this.state.text.length)
-    const abc = this.state.text.split(" ").length
-    const cde = abc
-    //alert(cde)
+    const cde = this.state.text.split(" ").length
     const kolkA = this.state.text.split( new RegExp( "a", "gi" ) ).length-1
-    //alert(kolkA);
     const kolkE = this.state.text.split( new RegExp( "e", "gi" ) ).length-1
-    //alert(kolkE);
     const kolkI = this.state.text.split( new RegExp( "i", "gi" ) ).length-1
-    //alert(kolkI);
     const kolkO = this.state.text.split( new RegExp( "o", "gi" ) ).length-1
-    //alert(kolkO);
     const kolkU = this.state.text.split( new RegExp( "u", "gi" ) ).length-1
-    //alert(kolkU);
 
     const text_all = "Text length: " + this.state.text.length + "<br />Word count: " + cde + "<br />How many letters A?" + kolkA + "<br />How many letters E?" + kolkE + "<br />How many letters I?" + kolkI + "<br />How many letters O?" + kolkO + "<br />How many letters U?" + kolkU;
     alert(text_all)
