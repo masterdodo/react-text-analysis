@@ -44,9 +44,7 @@ class App extends Component {
         <header className="App-header">
           <textarea rows="30" cols="100" value={this.state.text} onChange={this.handleChange}>
           </textarea>
-          <button onClick={() => this.preracunaj()}>
-            Preračunaj
-          </button>
+          <button onClick={() => this.preracunaj()}>Preračunaj</button>
 
           <div id="output-text">
           {this.state.things.map((thing, index) =>
